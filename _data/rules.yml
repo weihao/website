@@ -1,4 +1,129 @@
-categories:
+deprecated:
+  description: >-
+    These rules have been deprecated in accordance with the <a
+    href="/docs/user-guide/rule-deprecation">deprecation policy</a>, and
+    replaced by newer rules:
+  name: Deprecated
+  rules:
+    - name: callback-return
+      replacedBy: []
+    - name: global-require
+      replacedBy: []
+    - name: handle-callback-err
+      replacedBy: []
+    - name: id-blacklist
+      replacedBy:
+        - id-denylist
+    - name: indent-legacy
+      replacedBy:
+        - indent
+    - name: lines-around-directive
+      replacedBy:
+        - padding-line-between-statements
+    - name: newline-after-var
+      replacedBy:
+        - padding-line-between-statements
+    - name: newline-before-return
+      replacedBy:
+        - padding-line-between-statements
+    - name: no-buffer-constructor
+      replacedBy: []
+    - name: no-catch-shadow
+      replacedBy:
+        - no-shadow
+    - name: no-mixed-requires
+      replacedBy: []
+    - name: no-native-reassign
+      replacedBy:
+        - no-global-assign
+    - name: no-negated-in-lhs
+      replacedBy:
+        - no-unsafe-negation
+    - name: no-new-require
+      replacedBy: []
+    - name: no-path-concat
+      replacedBy: []
+    - name: no-process-env
+      replacedBy: []
+    - name: no-process-exit
+      replacedBy: []
+    - name: no-restricted-modules
+      replacedBy: []
+    - name: no-spaced-func
+      replacedBy:
+        - func-call-spacing
+    - name: no-sync
+      replacedBy: []
+    - name: prefer-reflect
+      replacedBy: []
+    - name: require-jsdoc
+      replacedBy: []
+    - name: valid-jsdoc
+      replacedBy: []
+removed:
+  description: >-
+    These rules from older versions of ESLint (before the <a
+    href="/docs/user-guide/rule-deprecation">deprecation policy</a> existed)
+    have been replaced by newer rules:
+  name: Removed
+  rules:
+    - removed: generator-star
+      replacedBy:
+        - generator-star-spacing
+    - removed: global-strict
+      replacedBy:
+        - strict
+    - removed: no-arrow-condition
+      replacedBy:
+        - no-confusing-arrow
+        - no-constant-condition
+    - removed: no-comma-dangle
+      replacedBy:
+        - comma-dangle
+    - removed: no-empty-class
+      replacedBy:
+        - no-empty-character-class
+    - removed: no-empty-label
+      replacedBy:
+        - no-labels
+    - removed: no-extra-strict
+      replacedBy:
+        - strict
+    - removed: no-reserved-keys
+      replacedBy:
+        - quote-props
+    - removed: no-space-before-semi
+      replacedBy:
+        - semi-spacing
+    - removed: no-wrap-func
+      replacedBy:
+        - no-extra-parens
+    - removed: space-after-function-name
+      replacedBy:
+        - space-before-function-paren
+    - removed: space-after-keywords
+      replacedBy:
+        - keyword-spacing
+    - removed: space-before-function-parentheses
+      replacedBy:
+        - space-before-function-paren
+    - removed: space-before-keywords
+      replacedBy:
+        - keyword-spacing
+    - removed: space-in-brackets
+      replacedBy:
+        - object-curly-spacing
+        - array-bracket-spacing
+    - removed: space-return-throw-case
+      replacedBy:
+        - keyword-spacing
+    - removed: space-unary-word-ops
+      replacedBy:
+        - space-unary-ops
+    - removed: spaced-line-comment
+      replacedBy:
+        - spaced-comment
+ruleTypes:
   - &ref_0
     description: Warns about a potential error.
     name: problem
@@ -1117,131 +1242,6 @@ categories:
         fixable: true
         name: yield-star-spacing
         recommended: false
-deprecated:
-  description: >-
-    These rules have been deprecated in accordance with the <a
-    href="/docs/user-guide/rule-deprecation">deprecation policy</a>, and
-    replaced by newer rules:
-  name: Deprecated
-  rules:
-    - name: callback-return
-      replacedBy: []
-    - name: global-require
-      replacedBy: []
-    - name: handle-callback-err
-      replacedBy: []
-    - name: id-blacklist
-      replacedBy:
-        - id-denylist
-    - name: indent-legacy
-      replacedBy:
-        - indent
-    - name: lines-around-directive
-      replacedBy:
-        - padding-line-between-statements
-    - name: newline-after-var
-      replacedBy:
-        - padding-line-between-statements
-    - name: newline-before-return
-      replacedBy:
-        - padding-line-between-statements
-    - name: no-buffer-constructor
-      replacedBy: []
-    - name: no-catch-shadow
-      replacedBy:
-        - no-shadow
-    - name: no-mixed-requires
-      replacedBy: []
-    - name: no-native-reassign
-      replacedBy:
-        - no-global-assign
-    - name: no-negated-in-lhs
-      replacedBy:
-        - no-unsafe-negation
-    - name: no-new-require
-      replacedBy: []
-    - name: no-path-concat
-      replacedBy: []
-    - name: no-process-env
-      replacedBy: []
-    - name: no-process-exit
-      replacedBy: []
-    - name: no-restricted-modules
-      replacedBy: []
-    - name: no-spaced-func
-      replacedBy:
-        - func-call-spacing
-    - name: no-sync
-      replacedBy: []
-    - name: prefer-reflect
-      replacedBy: []
-    - name: require-jsdoc
-      replacedBy: []
-    - name: valid-jsdoc
-      replacedBy: []
-removed:
-  description: >-
-    These rules from older versions of ESLint (before the <a
-    href="/docs/user-guide/rule-deprecation">deprecation policy</a> existed)
-    have been replaced by newer rules:
-  name: Removed
-  rules:
-    - removed: generator-star
-      replacedBy:
-        - generator-star-spacing
-    - removed: global-strict
-      replacedBy:
-        - strict
-    - removed: no-arrow-condition
-      replacedBy:
-        - no-confusing-arrow
-        - no-constant-condition
-    - removed: no-comma-dangle
-      replacedBy:
-        - comma-dangle
-    - removed: no-empty-class
-      replacedBy:
-        - no-empty-character-class
-    - removed: no-empty-label
-      replacedBy:
-        - no-labels
-    - removed: no-extra-strict
-      replacedBy:
-        - strict
-    - removed: no-reserved-keys
-      replacedBy:
-        - quote-props
-    - removed: no-space-before-semi
-      replacedBy:
-        - semi-spacing
-    - removed: no-wrap-func
-      replacedBy:
-        - no-extra-parens
-    - removed: space-after-function-name
-      replacedBy:
-        - space-before-function-paren
-    - removed: space-after-keywords
-      replacedBy:
-        - keyword-spacing
-    - removed: space-before-function-parentheses
-      replacedBy:
-        - space-before-function-paren
-    - removed: space-before-keywords
-      replacedBy:
-        - keyword-spacing
-    - removed: space-in-brackets
-      replacedBy:
-        - object-curly-spacing
-        - array-bracket-spacing
-    - removed: space-return-throw-case
-      replacedBy:
-        - keyword-spacing
-    - removed: space-unary-word-ops
-      replacedBy:
-        - space-unary-ops
-    - removed: spaced-line-comment
-      replacedBy:
-        - spaced-comment
 types:
   - *ref_0
   - *ref_1
