@@ -8,7 +8,7 @@ layout: doc
 <p>No rules are enabled by default. The <code>"extends": "eslint:recommended"</code> property in a <a href="../user-guide/configuring#extending-configuration-files">configuration file</a> enables rules that report common problems, which have a check mark (recommended) below.</p>
 <p>The <code>--fix</code> option on the <a href="../user-guide/command-line-interface#fix">command line</a> automatically fixes problems (currently mostly whitespace) reported by rules which have a wrench (fixable) below.</p>
 {% for type in rules.types %}
-  <h2>{{ type.name }}</h2>
+  <h2>{{ type.displayName }}</h2>
   {{ type.description }}
   <table class="rule-list table table-striped">
     <colgroup>

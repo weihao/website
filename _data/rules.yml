@@ -126,6 +126,7 @@ removed:
 ruleTypes:
   - &ref_0
     description: Warns about a potential error.
+    displayName: Possible Problems
     name: problem
     rules:
       - description: enforce `return` statements in callbacks of array methods
@@ -362,6 +363,7 @@ ruleTypes:
         recommended: true
   - &ref_1
     description: Suggests an alternate way of doing something.
+    displayName: Suggestions
     name: suggestion
     rules:
       - description: enforce getter and setter pairs in objects and classes
@@ -972,6 +974,7 @@ ruleTypes:
         recommended: false
   - &ref_2
     description: Enforces code style.
+    displayName: Layout & Formatting
     name: layout
     rules:
       - description: enforce linebreaks after opening and before closing array brackets
